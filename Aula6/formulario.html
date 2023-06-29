@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formúlarios</title>
+</head>
+<body>
+    <h1>Trabalhando com tags para formúlarios</h1>
+    <hr>
+    <p>Elementos para formúlarios são voltados à interação com o usúario.
+        Entrada de dados, seleção de opções, processamento para manipulaçao de dados, entre outros.
+    </p>
+    <p>Formúlarios no HTML são somente uma <b>Interface</b>.</p>
+    <P>Para que o úsuario funcione, é necessário combiná-lo com uma <b>Linguagem de Programação</b>.</P>
+    <h2>Exemplos</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Formúlario</legend>
+    <p>
+        <label for="nome">Nome:</label>
+        <input requiret type="text" id="name" name="Nome"
+        placeholder="Nome Completo"><!--maxlength="10" determina a quantidade de caracteres que pode ser escrito-->
+    </p>
+    <p>
+        <label for="email">E-mail</label>
+        <input requiret type="email" id="email" name="email" placeholder="E-mail">
+    </p>
+    <p>
+        <label for="telenone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="Telefone">
+    </p>
+    <p>
+        <p>Você está trabalhando?</p>
+        <p><!--Cuidado ao usar RADIO, pois é necessário todos os "names" do mesmo jeito!-->
+        <input type="radio" id="sim" name="selection" value="NÃO">
+        <label for="sim">SIM</label>
+        <input type="radio" id="nao" name="selection" value="NÃO">
+        <label for="não">NÃO</label>
+    </p>
+    <p>
+
+        <p>A Bi é ridicula?</p>
+        <INPUT TYPE="checkbox" id="HTML5" name="interesses">
+        <label for="HTML5">HTML5</label>
+        <INPUT TYPE="checkbox" NAME="css3" name="interesses">
+        <label for="sim">CSS3</label>
+        <INPUT TYPE="checkbox" NAME="javascript" name="interesses">
+        <label for="Javascript">Javascript</label>
+        </p>
+
+        <p>
+            <label for="nascimento">Nascimento:</label>
+            <input type="date" id="nascimento" name="nascimento">
+        </p>
+        <p>
+            <label for="cor"><strong>Qual sua cor favorita?</strong></label>
+            <input type="color" id="cor" name="cor">
+        </p>
+        <p>
+            <label for="idade">idade:</label>
+            <input type="number" id="idade" name="idade">
+        </p>
+
+        <p>
+            <label for="assunto"><b>Assunto:</b></label>
+            <select name="assunto" id="assunto">
+            <option value="" selected disabled style>Selecionar uma opção</option> 
+            <option value="Elogios">Elogios</option>
+            <option value="Reclamações">Reclamações</option>
+            <option value="Outros">Outros</option>
+            </select>
+
+        </p>
+
+        <p>
+            <label for=Mensagem>Deixa sua mensagem</label>
+        <textarea name="mensagem" id="mensagem" cols="20" rows="5"></textarea><!--Textarea significa a aréa onde é escrita o texto-->
+        </p>
+
+        <button type="submit" id="btnEnviar">Enviar</button>
+    </fieldset>
+    </form>
+    
+</body>
+</html>
